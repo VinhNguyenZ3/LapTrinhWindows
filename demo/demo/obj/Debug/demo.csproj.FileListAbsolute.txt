@@ -1,0 +1,9 @@
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập\demo\demo\bin\Debug\demo.exe.config
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập\demo\demo\bin\Debug\demo.exe
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập\demo\demo\bin\Debug\demo.pdb
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập\demo\demo\obj\Debug\demo.csproj.AssemblyReference.cache
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập\demo\demo\obj\Debug\demo.Properties.Resources.resources
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập\demo\demo\obj\Debug\demo.csproj.GenerateResource.cache
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập\demo\demo\obj\Debug\demo.csproj.CoreCompileInputs.cache
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập\demo\demo\obj\Debug\demo.exe
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập\demo\demo\obj\Debug\demo.pdb
