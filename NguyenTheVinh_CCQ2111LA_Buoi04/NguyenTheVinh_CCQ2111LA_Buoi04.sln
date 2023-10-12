@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "buoi04_01", "buoi04_01\buoi04_01.csproj", "{024DB2C7-62E4-48A9-8BDA-97AAFE0392A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "buoi04_02", "buoi04_02\buoi04_02.csproj", "{AAF23EBE-A303-42BA-B2B7-22F3D84C89EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{024DB2C7-62E4-48A9-8BDA-97AAFE0392A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024DB2C7-62E4-48A9-8BDA-97AAFE0392A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024DB2C7-62E4-48A9-8BDA-97AAFE0392A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024DB2C7-62E4-48A9-8BDA-97AAFE0392A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF23EBE-A303-42BA-B2B7-22F3D84C89EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF23EBE-A303-42BA-B2B7-22F3D84C89EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF23EBE-A303-42BA-B2B7-22F3D84C89EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF23EBE-A303-42BA-B2B7-22F3D84C89EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9EBBC2A-2A4A-4E18-85DF-0ABBAE802348}
+	EndGlobalSection
+EndGlobal
