@@ -1,0 +1,7 @@
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi02\Buoi02_02\bin\Debug\Buoi02_02.exe.config
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi02\Buoi02_02\bin\Debug\Buoi02_02.exe
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi02\Buoi02_02\bin\Debug\Buoi02_02.pdb
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi02\Buoi02_02\obj\Debug\Buoi02_02.csproj.AssemblyReference.cache
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi02\Buoi02_02\obj\Debug\Buoi02_02.csproj.CoreCompileInputs.cache
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi02\Buoi02_02\obj\Debug\Buoi02_02.exe
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi02\Buoi02_02\obj\Debug\Buoi02_02.pdb
