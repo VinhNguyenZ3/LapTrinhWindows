@@ -50,19 +50,19 @@ namespace Buoi02_02
                 XuatDDSV(listSV);
             }
         }
-        private static void DSSVSapXep(List<SinhVien> listSinhVien)
+        private static void DSSVDTTangDan(List<SinhVien> listSinhVien)
         {
             List<SinhVien> listSV = listSinhVien.Where(p => p.DiemTB >= 5).ToList();
             Console.WriteLine("-===Danh sach sinh vien sap xep diem tang dan===-");
             XuatDDSV(listSV);
         }
-        private static void DSSVCNTTDLonHon5(List<SinhVien> listSinhVien)
+        private static void DSSVCNTTDiemTBLonHonBang5(List<SinhVien> listSinhVien)
         {
             List<SinhVien> listSV = listSinhVien.Where(p => p.DiemTB >= 5).Where(p => p.Khoa == "CNTT").ToList();
             Console.WriteLine("-===Danh sach sinh vien CNTT va diem >= 5 ===-");
             XuatDDSV(listSV);
         }
-        private static void DSSVDTBMax(List<SinhVien> listSinhVien)
+        private static void DSSVDTBMaxCNTT(List<SinhVien> listSinhVien)
         {
             double diemMax = listSinhVien.Where(p => p.Khoa == "CNTT").Max(p => p.DiemTB);
             List<SinhVien> listSV = listSinhVien.Where(p => p.Khoa == "CNTT" && p.DiemTB >= diemMax).ToList();
@@ -76,16 +76,23 @@ namespace Buoi02_02
             Console.InputEncoding = Encoding.Unicode;
             List<SinhVien> listSV = NhapDSSinhVien();
             XuatDDSV(listSV);
+
+
+
             //1.1Xuất ra thông tin của các sinh viên thuộc khoa "CNTT"(nếu có).
             DSSVCNTT(listSV);
+
             //1.2 Xuất ra thông tin sinh viên có điểm TB lớn hơn bằng 5(nếu có).
             DSSVLonHon5(listSV);
+
             //1.3 Xuất ra danh sách sinh viên được sắp xếp theo điểm trung bình tăng dần.
-            DSSVCNTTDLonHon5(listSV);
+            DSSVDTTangDan(listSV);
+
             //1.4 Xuất ra danh sách sinh viên có điểm TB lớn hơn bằng 5 và thuộc khoa "CNTT"(nếu có).
-            DSSVCNTTDLonHon5(listSV);
+            DSSVCNTTDiemTBLonHonBang5(listSV);
+
             //1.5 Xuất ra danh sách sinh viên có điểm trung bình cao nhất và thuộc khoa "CNTT"(nếu có).
-            DSSVDTBMax(listSV);
+            DSSVDTBMaxCNTT(listSV);
             Console.ReadKey();
         }
     }

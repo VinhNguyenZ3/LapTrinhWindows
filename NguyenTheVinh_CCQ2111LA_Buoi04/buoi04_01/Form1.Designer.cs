@@ -30,25 +30,26 @@ namespace buoi04_01
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtB_HoTen = new System.Windows.Forms.TextBox();
             this.btn_Thoat = new System.Windows.Forms.Button();
-            this.btnChon = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lbDanhSach = new System.Windows.Forms.ListBox();
+            this.lbSinhVien = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbKhoa = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnXoaAll_Click = new System.Windows.Forms.Button();
-            this.btnXoa1_Click = new System.Windows.Forms.Button();
-            this.btnThemAll_Click = new System.Windows.Forms.Button();
-            this.btnThem1 = new System.Windows.Forms.Button();
+            this.btnXoaAll = new System.Windows.Forms.Button();
+            this.btnXoa1 = new System.Windows.Forms.Button();
+            this.btnThemAll = new System.Windows.Forms.Button();
+            this.btnChonSV = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.lbSinhVien = new System.Windows.Forms.ListView();
+            this.lvLop = new System.Windows.Forms.ListView();
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.toolTip1 = new System.Windows.Forms.ToolTip();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -59,7 +60,7 @@ namespace buoi04_01
             // 
             this.groupBox1.Controls.Add(this.txtB_HoTen);
             this.groupBox1.Controls.Add(this.btn_Thoat);
-            this.groupBox1.Controls.Add(this.btnChon);
+            this.groupBox1.Controls.Add(this.btnThem);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(28, 29);
             this.groupBox1.Name = "groupBox1";
@@ -86,15 +87,15 @@ namespace buoi04_01
             this.btn_Thoat.UseVisualStyleBackColor = false;
             this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
-            // btnChon
+            // btnThem
             // 
-            this.btnChon.Location = new System.Drawing.Point(511, 24);
-            this.btnChon.Name = "btnChon";
-            this.btnChon.Size = new System.Drawing.Size(75, 32);
-            this.btnChon.TabIndex = 1;
-            this.btnChon.Text = "Thêm";
-            this.btnChon.UseVisualStyleBackColor = true;
-            this.btnChon.Click += new System.EventHandler(this.btnChon_Click);
+            this.btnThem.Location = new System.Drawing.Point(511, 24);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 32);
+            this.btnThem.TabIndex = 1;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label1
             // 
@@ -107,7 +108,7 @@ namespace buoi04_01
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.lbDanhSach);
+            this.groupBox2.Controls.Add(this.lbSinhVien);
             this.groupBox2.Location = new System.Drawing.Point(28, 128);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(243, 334);
@@ -115,23 +116,23 @@ namespace buoi04_01
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách sinh viên";
             // 
-            // lbDanhSach
+            // lbSinhVien
             // 
-            this.lbDanhSach.FormattingEnabled = true;
-            this.lbDanhSach.Location = new System.Drawing.Point(7, 20);
-            this.lbDanhSach.Name = "lbDanhSach";
-            this.lbDanhSach.Size = new System.Drawing.Size(230, 303);
-            this.lbDanhSach.TabIndex = 0;
-            this.lbDanhSach.SelectedIndexChanged += new System.EventHandler(this.lbDanhSach_SelectedIndexChanged);
+            this.lbSinhVien.FormattingEnabled = true;
+            this.lbSinhVien.Location = new System.Drawing.Point(7, 20);
+            this.lbSinhVien.Name = "lbSinhVien";
+            this.lbSinhVien.Size = new System.Drawing.Size(230, 303);
+            this.lbSinhVien.TabIndex = 0;
+            this.lbSinhVien.SelectedIndexChanged += new System.EventHandler(this.lbSinhVien_SelectedIndexChanged);
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.cbKhoa);
             this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.btnXoaAll_Click);
-            this.groupBox3.Controls.Add(this.btnXoa1_Click);
-            this.groupBox3.Controls.Add(this.btnThemAll_Click);
-            this.groupBox3.Controls.Add(this.btnThem1);
+            this.groupBox3.Controls.Add(this.btnXoaAll);
+            this.groupBox3.Controls.Add(this.btnXoa1);
+            this.groupBox3.Controls.Add(this.btnThemAll);
+            this.groupBox3.Controls.Add(this.btnChonSV);
             this.groupBox3.Location = new System.Drawing.Point(289, 128);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(155, 277);
@@ -154,7 +155,6 @@ namespace buoi04_01
             this.cbKhoa.Name = "cbKhoa";
             this.cbKhoa.Size = new System.Drawing.Size(121, 21);
             this.cbKhoa.TabIndex = 0;
-            this.cbKhoa.SelectedIndexChanged += new System.EventHandler(this.cbKhoa_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -165,53 +165,53 @@ namespace buoi04_01
             this.label2.TabIndex = 0;
             this.label2.Text = "Khoa";
             // 
-            // btnXoaAll_Click
+            // btnXoaAll
             // 
-            this.btnXoaAll_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaAll_Click.Location = new System.Drawing.Point(18, 228);
-            this.btnXoaAll_Click.Name = "btnXoaAll_Click";
-            this.btnXoaAll_Click.Size = new System.Drawing.Size(121, 33);
-            this.btnXoaAll_Click.TabIndex = 1;
-            this.btnXoaAll_Click.Text = "<<";
-            this.btnXoaAll_Click.UseVisualStyleBackColor = true;
-            this.btnXoaAll_Click.Click += new System.EventHandler(this.btnXoaAll_Click_Click);
+            this.btnXoaAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaAll.Location = new System.Drawing.Point(18, 224);
+            this.btnXoaAll.Name = "btnXoaAll";
+            this.btnXoaAll.Size = new System.Drawing.Size(121, 33);
+            this.btnXoaAll.TabIndex = 1;
+            this.btnXoaAll.Text = "<<";
+            this.btnXoaAll.UseVisualStyleBackColor = true;
+            this.btnXoaAll.Click += new System.EventHandler(this.btnXoaAll_Click);
             // 
-            // btnXoa1_Click
+            // btnXoa1
             // 
-            this.btnXoa1_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa1_Click.Location = new System.Drawing.Point(18, 177);
-            this.btnXoa1_Click.Name = "btnXoa1_Click";
-            this.btnXoa1_Click.Size = new System.Drawing.Size(121, 33);
-            this.btnXoa1_Click.TabIndex = 1;
-            this.btnXoa1_Click.Text = "<";
-            this.btnXoa1_Click.UseVisualStyleBackColor = true;
-            this.btnXoa1_Click.Click += new System.EventHandler(this.btnXoa1_Click_Click);
+            this.btnXoa1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa1.Location = new System.Drawing.Point(18, 176);
+            this.btnXoa1.Name = "btnXoa1";
+            this.btnXoa1.Size = new System.Drawing.Size(121, 33);
+            this.btnXoa1.TabIndex = 1;
+            this.btnXoa1.Text = "<";
+            this.btnXoa1.UseVisualStyleBackColor = true;
+            this.btnXoa1.Click += new System.EventHandler(this.btnXoa1_Click);
             // 
-            // btnThemAll_Click
+            // btnThemAll
             // 
-            this.btnThemAll_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemAll_Click.Location = new System.Drawing.Point(18, 127);
-            this.btnThemAll_Click.Name = "btnThemAll_Click";
-            this.btnThemAll_Click.Size = new System.Drawing.Size(121, 33);
-            this.btnThemAll_Click.TabIndex = 1;
-            this.btnThemAll_Click.Text = ">>";
-            this.btnThemAll_Click.UseVisualStyleBackColor = true;
-            this.btnThemAll_Click.Click += new System.EventHandler(this.btnThemAll_Click_Click);
+            this.btnThemAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemAll.Location = new System.Drawing.Point(18, 127);
+            this.btnThemAll.Name = "btnThemAll";
+            this.btnThemAll.Size = new System.Drawing.Size(121, 33);
+            this.btnThemAll.TabIndex = 1;
+            this.btnThemAll.Text = ">>";
+            this.btnThemAll.UseVisualStyleBackColor = true;
+            this.btnThemAll.Click += new System.EventHandler(this.btnThemAll_Click);
             // 
-            // btnThem1
+            // btnChonSV
             // 
-            this.btnThem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem1.Location = new System.Drawing.Point(18, 79);
-            this.btnThem1.Name = "btnThem1";
-            this.btnThem1.Size = new System.Drawing.Size(121, 33);
-            this.btnThem1.TabIndex = 1;
-            this.btnThem1.Text = ">";
-            this.btnThem1.UseVisualStyleBackColor = true;
-            this.btnThem1.Click += new System.EventHandler(this.btnThem1_Click);
+            this.btnChonSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChonSV.Location = new System.Drawing.Point(18, 79);
+            this.btnChonSV.Name = "btnChonSV";
+            this.btnChonSV.Size = new System.Drawing.Size(121, 33);
+            this.btnChonSV.TabIndex = 1;
+            this.btnChonSV.Text = ">";
+            this.btnChonSV.UseVisualStyleBackColor = true;
+            this.btnChonSV.Click += new System.EventHandler(this.btnChonSV_Click);
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.lbSinhVien);
+            this.groupBox4.Controls.Add(this.lvLop);
             this.groupBox4.Location = new System.Drawing.Point(465, 128);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(381, 340);
@@ -219,20 +219,21 @@ namespace buoi04_01
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Sinh viên được chọn";
             // 
-            // lbSinhVien
+            // lvLop
             // 
-            this.lbSinhVien.CheckBoxes = true;
-            this.lbSinhVien.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvLop.CheckBoxes = true;
+            this.lvLop.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader3,
             this.columnHeader4});
-            this.lbSinhVien.HideSelection = false;
-            this.lbSinhVien.Location = new System.Drawing.Point(6, 20);
-            this.lbSinhVien.Name = "lbSinhVien";
-            this.lbSinhVien.Size = new System.Drawing.Size(369, 314);
-            this.lbSinhVien.TabIndex = 0;
-            this.lbSinhVien.UseCompatibleStateImageBehavior = false;
-            this.lbSinhVien.View = System.Windows.Forms.View.Details;
-            this.lbSinhVien.SelectedIndexChanged += new System.EventHandler(this.lbSinhVien_SelectedIndexChanged);
+            this.lvLop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvLop.GridLines = true;
+            this.lvLop.HideSelection = false;
+            this.lvLop.Location = new System.Drawing.Point(3, 16);
+            this.lvLop.Name = "lvLop";
+            this.lvLop.Size = new System.Drawing.Size(375, 321);
+            this.lvLop.TabIndex = 0;
+            this.lvLop.UseCompatibleStateImageBehavior = false;
+            this.lvLop.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader3
             // 
@@ -255,6 +256,7 @@ namespace buoi04_01
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -275,22 +277,22 @@ namespace buoi04_01
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtB_HoTen;
         private System.Windows.Forms.Button btn_Thoat;
-        private System.Windows.Forms.Button btnChon;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnXoaAll_Click;
-        private System.Windows.Forms.Button btnXoa1_Click;
-        private System.Windows.Forms.Button btnThemAll_Click;
-        private System.Windows.Forms.Button btnThem1;
+        private System.Windows.Forms.Button btnChonSV;
         private System.Windows.Forms.ComboBox cbKhoa;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.ListBox lbDanhSach;
-        private System.Windows.Forms.ListView lbSinhVien;
+        private System.Windows.Forms.ListBox lbSinhVien;
+        private System.Windows.Forms.ListView lvLop;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.Button btnXoaAll;
+        private System.Windows.Forms.Button btnXoa1;
+        private System.Windows.Forms.Button btnThemAll;
     }
 }
 

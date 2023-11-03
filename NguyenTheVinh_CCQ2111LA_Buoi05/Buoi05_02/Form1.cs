@@ -36,7 +36,7 @@ namespace Buoi05_02
                     throw new Exception("Họ tên không được để trống.");
                 if (!double.TryParse(txtDiemTB.Text, out diemtb))
                     throw new Exception("Điểm TB không phải số.");
-                if (diemtb >= 0 && diemtb <= 10)
+                if (diemtb < 0 || diemtb > 10)
                     throw new Exception("Điểm TB phải lớn hơn 0, nhỏ hơn bằng 10.");
                 string mssv = mtbMSSV.Text;
                 string hoten = txtHoTen.Text;

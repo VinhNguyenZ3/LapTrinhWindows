@@ -40,10 +40,14 @@
             this.nudSoLuong = new System.Windows.Forms.NumericUpDown();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lvDSDatMon = new System.Windows.Forms.ListView();
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Ban = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.TenMon2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.SoLuong = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Gia2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Stt01 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.TenMon = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Gia = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txt = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).BeginInit();
@@ -67,20 +71,26 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 94);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(220, 299);
+            this.groupBox1.Size = new System.Drawing.Size(259, 299);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách món";
             // 
             // lvDSMon
             // 
+            this.lvDSMon.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Stt01,
+            this.TenMon,
+            this.Gia});
+            this.lvDSMon.GridLines = true;
             this.lvDSMon.HideSelection = false;
             this.lvDSMon.Location = new System.Drawing.Point(7, 20);
             this.lvDSMon.Name = "lvDSMon";
-            this.lvDSMon.Size = new System.Drawing.Size(207, 273);
+            this.lvDSMon.Size = new System.Drawing.Size(238, 273);
             this.lvDSMon.TabIndex = 0;
             this.lvDSMon.UseCompatibleStateImageBehavior = false;
             this.lvDSMon.View = System.Windows.Forms.View.Details;
+            this.lvDSMon.SelectedIndexChanged += new System.EventHandler(this.lvDSMon_SelectedIndexChanged);
             // 
             // groupBox2
             // 
@@ -90,7 +100,7 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.cbBan);
             this.groupBox2.Controls.Add(this.nudSoLuong);
-            this.groupBox2.Location = new System.Drawing.Point(238, 94);
+            this.groupBox2.Location = new System.Drawing.Point(284, 94);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(177, 299);
             this.groupBox2.TabIndex = 1;
@@ -106,6 +116,7 @@
             this.btnHuy.TabIndex = 3;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnThem
             // 
@@ -184,7 +195,7 @@
             // 
             this.groupBox3.Controls.Add(this.lvDSDatMon);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(421, 94);
+            this.groupBox3.Location = new System.Drawing.Point(467, 94);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(367, 299);
             this.groupBox3.TabIndex = 1;
@@ -194,39 +205,65 @@
             // lvDSDatMon
             // 
             this.lvDSDatMon.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader1});
+            this.Ban,
+            this.TenMon2,
+            this.SoLuong,
+            this.Gia2});
+            this.lvDSDatMon.GridLines = true;
             this.lvDSDatMon.HideSelection = false;
-            this.lvDSDatMon.Location = new System.Drawing.Point(6, 19);
+            this.lvDSDatMon.Location = new System.Drawing.Point(6, 20);
             this.lvDSDatMon.Name = "lvDSDatMon";
             this.lvDSDatMon.Size = new System.Drawing.Size(355, 273);
             this.lvDSDatMon.TabIndex = 0;
             this.lvDSDatMon.UseCompatibleStateImageBehavior = false;
             this.lvDSDatMon.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader4
+            // Ban
             // 
-            this.columnHeader4.Text = "Bàn";
+            this.Ban.Text = "Bàn";
+            this.Ban.Width = 80;
             // 
-            // columnHeader5
+            // TenMon2
             // 
-            this.columnHeader5.Text = "Tên món";
+            this.TenMon2.Text = "Tên món";
+            this.TenMon2.Width = 120;
             // 
-            // columnHeader6
+            // SoLuong
             // 
-            this.columnHeader6.Text = "Số lượng";
+            this.SoLuong.Text = "Số lượng";
+            this.SoLuong.Width = 80;
             // 
-            // columnHeader1
+            // Gia2
             // 
-            this.columnHeader1.Text = "Giá";
+            this.Gia2.Text = "Giá";
+            // 
+            // Stt01
+            // 
+            this.Stt01.Text = "STT";
+            // 
+            // TenMon
+            // 
+            this.TenMon.Text = "Tên món";
+            this.TenMon.Width = 100;
+            // 
+            // Gia
+            // 
+            this.Gia.Text = "Giá";
+            this.Gia.Width = 80;
+            // 
+            // txt
+            // 
+            this.txt.Location = new System.Drawing.Point(512, 42);
+            this.txt.Name = "txt";
+            this.txt.Size = new System.Drawing.Size(336, 20);
+            this.txt.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 410);
+            this.ClientSize = new System.Drawing.Size(860, 410);
+            this.Controls.Add(this.txt);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -258,10 +295,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbBan;
         private System.Windows.Forms.ListView lvDSDatMon;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader Ban;
+        private System.Windows.Forms.ColumnHeader TenMon2;
+        private System.Windows.Forms.ColumnHeader SoLuong;
+        private System.Windows.Forms.ColumnHeader Gia2;
+        private System.Windows.Forms.ColumnHeader Stt01;
+        private System.Windows.Forms.ColumnHeader TenMon;
+        private System.Windows.Forms.ColumnHeader Gia;
+        private System.Windows.Forms.TextBox txt;
     }
 }
 

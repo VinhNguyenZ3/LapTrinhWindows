@@ -12,106 +12,100 @@ namespace buoi04_01
 {
     public partial class Form1 : Form
     {
-        int chon = 1;
+        int chon = 0;
         public Form1()
         {
             InitializeComponent();
         }
-
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load_1(object sender, EventArgs e)
         {
-            lbDanhSach.Items.Add("Nguyễn thế vinh");
-            lbDanhSach.Items.Add("Nguyễn văn thế");
-            lbDanhSach.Items.Add("Nguyễn chính");
-            lbDanhSach.Items.Add("Lê văn be");
-            lbDanhSach.Items.Add("trần văn chính");
-            lbDanhSach.Items.Add("mai hữu danh");
-            lbDanhSach.Items.Add("hồ văn en");
+            lbSinhVien.Items.Add("Nguyễn thế vinh");
+            lbSinhVien.Items.Add("Nguyễn văn thế");
+            lbSinhVien.Items.Add("Nguyễn chính");
+            lbSinhVien.Items.Add("Lê văn be");
+            lbSinhVien.Items.Add("trần văn chính");
+            lbSinhVien.Items.Add("mai hữu danh");
+            lbSinhVien.Items.Add("hồ văn en");
             cbKhoa.SelectedIndex = 0;
         }
         private void btn_Thoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-        private void btnChon_Click(object sender, EventArgs e)
+        //private void btnThem_Click(object sender, EventArgs e)
+        //{
+        //    if (cbKhoa.SelectedIndex == -1)
+        //        MessageBox.Show("Vui lòng chọn khoa");
+        //    //if (lbSinhVien.SelectedIndex == -1)
+        //    //    MessageBox.Show("Vui lòng chọn tên");
+        //    else
+        //    {
+        //        string khoa = cbKhoa.SelectedItem.ToString();
+        //        string hoten = txtB_HoTen.ToString();
+        //        ListViewItem item = new ListViewItem(hoten);
+        //        item.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = khoa });
+        //        lvLop.Items.Add(item);
+        //        //lbSinhVien.Items.RemoveAt(lbSinhVien.SelectedIndex);
+        //    }
+        //}
+        private void btnThem_Click(object sender, EventArgs e)
         {
             try
             {
                 if (txtB_HoTen.Text.Length.Equals(0))
-                    throw new Exception("Họ tên chưa nhập.");
+                    throw new Exception("Vui lòng nhập họ tên");
                 string hoten = txtB_HoTen.Text;
-                lbDanhSach.Items.Add(hoten);
+                lbSinhVien.Items.Add(hoten);
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex) {
                 MessageBox.Show(ex.Message);
             }
-
-
-
         }
-
-        private void btnThem1_Click(object sender, EventArgs e)
+        private void btnChonSV_Click(object sender, EventArgs e)
         {
-            if (cbKhoa.SelectedIndex == -1)
-                MessageBox.Show("Vui lòng chọn khoa");
-            if (lbDanhSach.SelectedIndex == -1)
-                MessageBox.Show("Vui lòng chọn tên");
-            else
+            if( chon != 1)
             {
+                string hoten = lbSinhVien.SelectedItem.ToString();
                 string khoa = cbKhoa.SelectedItem.ToString();
-                string hoten = lbDanhSach.SelectedItem.ToString();
                 ListViewItem item = new ListViewItem(hoten);
                 item.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = khoa });
-                lbSinhVien.Items.Add(item);
-                lbDanhSach.Items.RemoveAt(lbDanhSach.SelectedIndex);
+                lvLop.Items.Add(item);
+                lbSinhVien.Items.RemoveAt(lbSinhVien.SelectedIndex);
+                chon = -1;
             }
         }
-        private void btnThemAll_Click_Click(object sender, EventArgs e)
+
+        private void btnThemAll_Click(object sender, EventArgs e)
         {
-            int count = lbDanhSach.Items.Count;
+            int count = lbSinhVien.Items.Count;
             for (int vt = 0; vt < count; vt++)
             {
                 string khoa = cbKhoa.SelectedItem.ToString();
-                string hoten = lbDanhSach.Items[vt].ToString();
+                string hoten = lbSinhVien.Items[vt].ToString();
                 ListViewItem item = new ListViewItem(hoten);
                 item.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = khoa });
-                lbSinhVien.Items.Add(item);
+                lvLop.Items.Add(item);
             }
-            lbDanhSach.Items.Clear();   
+            lbSinhVien.Items.Clear();
         }
-
-        private void btnXoa1_Click_Click(object sender, EventArgs e)
+        private void btnXoa1_Click(object sender, EventArgs e)
         {
-            foreach( ListViewItem item in lbSinhVien.Items )
+            foreach (ListViewItem item in lvLop.Items)
             {
-                if(item.Checked)
+                if (item.Checked)
                 {
-                    lbSinhVien.Items.Remove(item);
-                    lbDanhSach.Items.Add(item.Text);
+                    lvLop.Items.Remove(item);
+                    lbSinhVien.Items.Add(item.Text);
                 }
             }
         }
-
-        private void btnXoaAll_Click_Click(object sender, EventArgs e)
+        private void btnXoaAll_Click(object sender, EventArgs e)
         {
-            foreach (ListViewItem item in lbSinhVien.Items)
+            foreach (ListViewItem item in lvLop.Items)
             {
-                lbSinhVien.Items.Remove(item);
-                lbDanhSach.Items.Add(item.Text);
-                
+                lvLop.Items.Remove(item);
+                lbSinhVien.Items.Add(item.Text);
             }
-        }
-
-        private void lbDanhSach_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbKhoa_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void lbSinhVien_SelectedIndexChanged(object sender, EventArgs e)

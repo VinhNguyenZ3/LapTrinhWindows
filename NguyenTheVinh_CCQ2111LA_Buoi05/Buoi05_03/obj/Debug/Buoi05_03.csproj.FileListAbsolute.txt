@@ -1,5 +1,0 @@
-C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_03\obj\Debug\Buoi05_03.csproj.AssemblyReference.cache
-C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_03\obj\Debug\Buoi05_03.Form1.resources
-C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_03\obj\Debug\Buoi05_03.Properties.Resources.resources
-C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_03\obj\Debug\Buoi05_03.csproj.GenerateResource.cache
-C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_03\obj\Debug\Buoi05_03.csproj.CoreCompileInputs.cache
