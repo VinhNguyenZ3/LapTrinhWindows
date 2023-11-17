@@ -21,9 +21,25 @@ namespace Buoi05_05
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "AVI File|*.avi| MP4 File|*.mp4";
-            if(openFile.ShowDialog() == DialogResult.OK)
+            openFile.Filter = "MP4 File|*.mp4| AVI File|*.avi";
+
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
                 axWindowsMediaPlayer1.URL = openFile.FileName;
+            }
+            else
+            {
+                // Nếu người dùng không chọn file, mặc định sử dụng video cố định
+                axWindowsMediaPlayer1.URL = "video_defaut.mp4";
+            }
+
+            // Thiết lập để video tự động phát lại
+            axWindowsMediaPlayer1.settings.setMode("loop", true);
+
+            //OpenFileDialog openFile = new OpenFileDialog();
+            //openFile.Filter = "AVI File|*.avi| MP4 File|*.mp4";
+            //if(openFile.ShowDialog() == DialogResult.OK)
+            //    axWindowsMediaPlayer1.URL = openFile.FileName;
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
@@ -49,6 +65,16 @@ namespace Buoi05_05
             {
                 Application.Exit();
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //OpenFileDialog openFile = new OpenFileDialog();
+            //openFile.Filter = "MP4 File|*.mp4| AVI File|*.avi";
+            axWindowsMediaPlayer1.URL = "C:\\Users\\thvin\\Downloads\\video_defaut.mp4";
+
+            axWindowsMediaPlayer1.settings.autoStart = false;
+            //axWindowsMediaPlayer1.settings.setMode("loop", true);
         }
     }
 }

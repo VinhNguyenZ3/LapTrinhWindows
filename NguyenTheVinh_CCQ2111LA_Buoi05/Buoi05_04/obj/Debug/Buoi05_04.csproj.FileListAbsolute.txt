@@ -1,0 +1,10 @@
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_04\bin\Debug\Buoi05_04.exe.config
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_04\bin\Debug\Buoi05_04.exe
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_04\bin\Debug\Buoi05_04.pdb
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_04\obj\Debug\Buoi05_04.csproj.AssemblyReference.cache
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_04\obj\Debug\Buoi05_04.Form1.resources
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_04\obj\Debug\Buoi05_04.Properties.Resources.resources
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_04\obj\Debug\Buoi05_04.csproj.GenerateResource.cache
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_04\obj\Debug\Buoi05_04.csproj.CoreCompileInputs.cache
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_04\obj\Debug\Buoi05_04.exe
+C:\Users\thvin\Documents\Năm học 22-24\Lập trình windows C#\Bài tập C#\NguyenTheVinh_CCQ2111LA_Buoi05\Buoi05_04\obj\Debug\Buoi05_04.pdb

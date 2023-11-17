@@ -21,5 +21,10 @@ namespace Buoi07_01
         {
 
         }
+
+        private void dgvDanhSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
